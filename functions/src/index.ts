@@ -14,7 +14,7 @@ main.use(bodyParse.json())
 main.use(bodyParse.urlencoded({extended:false}))
 
 const db=admin.firestore()
-export const restApiFirebase=functions.https.onRequest(main)
+export const lkApi=functions.https.onRequest(main)
 
 interface Product
 {
